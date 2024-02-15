@@ -26,8 +26,8 @@ class DynamicProgramming:
             return self.memo[(i, t, b)]
         if self.time[i] > t or self.cost[i] > b:
             self.memo[(i, t, b)] = self.calculate(i + 1, t, b)
-            return self.memo[(i, t, b)]
-        self.memo[(i, t, b)] = max(self.calculate(i + 1, t, b),
+        else:
+            self.memo[(i, t, b)] = max(self.calculate(i + 1, t, b),
                                    self.calculate(i + 1, t - self.time[i], b - self.cost[i]) + self.interest[i])
         return self.memo[(i, t, b)]
 
