@@ -5,7 +5,7 @@ Progetto per il corso di Ingegneria della Conoscenza (ICON) AA. 2023-24
 1. Installare il programma SWI-Prolog eseguendo il file ```swipl-9.2.0-1.x64.exe``` nella cartella ```requirements``` del progetto.
     * Durante l'installazione assicurarsi di spuntare la scelta di inserire la variabile d'ambiente di SWI-Prolog in PATH
 2. Installare la libreria pyswip con il comando ```pip install git+https://github.com/yuce/pyswip@master#egg=pyswip```
-3. Se necessario modificare il file ```C:\Python\Python36\Lib\site-packages\pyswip\core.py``` alla riga 180:<br>
+3. Se necessario modificare il file ```core.py``` alla riga 180:<br>
     * ```r'pl\bin'``` -> ```r'swipl\bin'```
 4. Tutte le altre librerie richieste dal software possono essere installate in modo classico
 
